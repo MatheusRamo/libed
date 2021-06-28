@@ -9,6 +9,10 @@ int main()
 	append(vec, 2.0);
 	print(vec);
 
+	LinkedList *list = LinkedList_create();
+	LinkedList_add_first(list, 2);
+	LinkedList_add_first(list, 1);
+	LinkedList_print(list);
 
 	destroy(&vec);
 

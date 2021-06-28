@@ -13,7 +13,8 @@ all: libed clean_myapp myapps
 	
 
 libed:\
-       	$(OBJ)/float_vector.o
+       	$(OBJ)/float_vector.o \
+	$(OBJ)/linked_list.o
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
 myapps: \

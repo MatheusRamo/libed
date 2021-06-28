@@ -40,12 +40,12 @@ void LinkedList_add_first(LinkedList *link, int val)
 void LinkedList_print(const LinkedList *link)
 {
 	Node *p = link->begin;
-	printf("[ ");
+	printf("L -> ");
 	while (p != NULL)
 	{
-		printf("[%d] ", p->val);
+		printf("%d -> ", p->val);
 		p = p->next;
 	}
-	printf("]\n");
+	printf("NULL\n");
 	
 }

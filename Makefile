@@ -12,7 +12,8 @@ CC = gcc
 all: libed clean_myapp myapps
 	
 
-libed: $(OBJ)/float_vector.o $(OBJ)/hello.o
+libed:\
+       	$(OBJ)/float_vector.o
 	ar -rcs $(LIB)/libed.a $(OBJ)/*.o
 
 myapps: \

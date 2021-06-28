@@ -1,5 +1,5 @@
 #include "float_vector.h"
-#include "hello.h"
+#include "linked_list.h"
 #include <stdio.h>
 
 int main()
@@ -9,7 +9,6 @@ int main()
 	append(vec, 2.0);
 	print(vec);
 
-	hello();
 
 	destroy(&vec);
 

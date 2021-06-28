@@ -37,7 +37,7 @@ void LinkedList_add_first(LinkedList *link, int val)
 	link->begin = p;
 }
 
-void LinkedList_print(LinkedList *link)
+void LinkedList_print(const LinkedList *link)
 {
 	Node *p = link->begin;
 	printf("[ ");
